@@ -11,7 +11,7 @@ function PersonalSection({ personalState, setPersonal }) {
   }
 
   return (
-    <Accordion title="Personal">
+    <Accordion title="Personal" open={true}>
       <div className="section personal-section">
         <div className="pair-input">
           <Input
