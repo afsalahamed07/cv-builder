@@ -1,0 +1,39 @@
+.main-container {
+    @apply container mx-auto grid grid-cols-2 gap-4 font-ubuntu py-4;
+}
+
+.editor .view-container {
+    @apply flex flex-col gap-4;
+}
+
+.section {
+    @apply flex flex-col gap-4 shadow-md rounded-md p-4;
+
+    h1 {
+        @apply font-bold text-2xl;
+    }
+}
+
+.input-label {
+    @apply flex flex-col gap-2;
+
+    label {
+        @apply font-semibold;
+    }
+
+    input {
+        @apply rounded-md shadow-md bg-gray-200 p-3;
+    }
+}
+
+.pair-input {
+    @apply grid grid-cols-2 gap-2;
+}
+
+.personal-view {
+    @apply flex flex-col gap-4 text-center;
+
+    .personal-info {
+        @apply grid grid-cols-3 gap-4;
+    }
+}
