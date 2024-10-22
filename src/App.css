@@ -8,10 +8,6 @@
 
 .section {
     @apply flex flex-col gap-4 p-4;
-
-    h1 {
-        @apply font-bold text-2xl;
-    }
 }
 
 .input-label {
@@ -39,14 +35,18 @@
 }
 
 .accordion {
-    @apply mb-4 border border-gray-300 rounded-lg;
+    @apply mb-4 border border-gray-300 rounded-lg w-full;
 
     .title {
         @apply text-xl font-bold;
     }
 
-    button {
+    .accordion-button {
         @apply w-full flex justify-between items-center px-4 py-2 bg-gray-200
         text-gray-800 font-bold;
     }
+}
+
+.edu-section {
+    @apply flex flex-col justify-center items-center;
 }

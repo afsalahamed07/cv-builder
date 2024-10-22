@@ -11,3 +11,12 @@
         font-display: swap;
     }
 }
+
+.btn {
+    @apply rounded-lg px-4 py-2 transition-all
+    ease-in-out font-semibold bg-gradient-to-r from-red-100 to-red-300 w-1/2;
+}
+
+.btn:hover {
+    @apply shadow-lg;
+}
