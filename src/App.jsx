@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import EditorContainer from "./components/EditorContainer";
-import ViewContainer from "./components/ViewContainer";
+import EditorContainer from "./components/editor/EditorContainer";
+import ViewContainer from "./components/view/ViewContainer";
 
 function App() {
   const [personalState, setPersonal] = useState({

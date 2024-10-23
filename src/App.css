@@ -50,3 +50,23 @@
 .edu-section {
     @apply flex flex-col justify-center items-center;
 }
+
+.edu-view {
+    @apply flex flex-col gap-4 p-4 mt-8;
+}
+
+.edu-info {
+    @apply flex gap-6;
+
+    .date {
+        @apply flex gap-2;
+    }
+
+    :nth-child(2) {
+        @apply grow;
+    }
+
+    p {
+        @apply py-1;
+    }
+}

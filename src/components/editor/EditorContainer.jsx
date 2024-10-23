@@ -1,4 +1,3 @@
-import "../App.css";
 import EducationSection from "./EducationSection";
 import PersonalSection from "./PersonalSection";
 

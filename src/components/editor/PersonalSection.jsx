@@ -1,4 +1,3 @@
-import "../App.css";
 import Input from "./input";
 import Accordion from "./Accordion";
 

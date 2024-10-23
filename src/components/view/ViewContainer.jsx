@@ -1,4 +1,4 @@
-import EducationView from "./EducaitonView";
+import EducationView from "./EducationView";
 import PersonalView from "./PersonalView";
 
 function ViewContainer({ personalState, educations }) {
@@ -6,9 +6,16 @@ function ViewContainer({ personalState, educations }) {
     <div className="view-container">
       <PersonalView personalState={personalState} />
 
-      <div>
+      <div className="edu-view">
         {Object.entries(educations).map(([key, edu]) => (
-          <EducationView key={key} school={edu.school} degree={edu.degree} />
+          <EducationView
+            key={key}
+            school={edu.school}
+            degree={edu.degree}
+            startDate={edu.startDate}
+            endDate={edu.endDate}
+            location={edu.location}
+          />
         ))}
       </div>
     </div>
