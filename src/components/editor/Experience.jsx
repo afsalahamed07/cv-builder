@@ -3,67 +3,71 @@ import Accordion from "./Accordion";
 import Button from "./button";
 import bin from "../../assets/bin.png";
 
-function Education({ id, educationState, setEducations }) {
+function Experience({ id, experienceState, setExperience }) {
   function updateHandler(field, value) {
     const updatedValue = {
-      ...educationState,
+      ...experienceState,
       [field]: value,
     };
-    setEducations((prev) => ({
+    setExperience((prev) => ({
       ...prev,
       [id]: updatedValue,
     }));
   }
 
-  function deleteEdu() {
-    console.log("triggered");
-    setEducations((prev) => {
-      const { [id]: _, ...updatedEducations } = prev;
+  function deleteExp() {
+    setExperience((prev) => {
+      const { [id]: _, ...updatedExperience } = prev;
 
-      return updatedEducations;
+      return updatedExperience;
     });
   }
-
   return (
-    <Accordion title={educationState.school}>
+    <Accordion title={experienceState.company}>
       <div className="section">
         <Input
-          label="School"
-          field="school"
-          value={educationState.school}
+          label="Compnay"
+          field="company"
+          value={experienceState.company}
           setValue={updateHandler}
         />
         <Input
-          label="Degree"
-          field="degree"
-          value={educationState.degree}
+          label="Designation"
+          field="designation"
+          value={experienceState.designation}
           setValue={updateHandler}
         />
         <div className="pair-input">
           <Input
             label="Start Date"
             field="startDate"
-            value={educationState.startDate}
+            value={experienceState.startDate}
             setValue={updateHandler}
           />
           <Input
             label="End Date"
             field="endDate"
-            value={educationState.endDate}
+            value={experienceState.endDate}
             setValue={updateHandler}
           />
         </div>
         <Input
           label="Location"
           field="location"
-          value={educationState.location}
+          value={experienceState.location}
+          setValue={updateHandler}
+        />
+        <Input
+          label="Description"
+          field="description"
+          value={experienceState.description}
           setValue={updateHandler}
         />
 
-        <Button label={bin} onClick={deleteEdu} logo={true} />
+        <Button label={bin} onClick={deleteExp} logo={true} />
       </div>
     </Accordion>
   );
 }
 
-export default Education;
+export default Experience;

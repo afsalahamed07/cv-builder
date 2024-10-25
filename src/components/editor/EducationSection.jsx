@@ -16,8 +16,8 @@ function EducationSection({ educations, newEducation, setEducations }) {
             />
           );
         })}
-        <Button label="New Education" newEducation={newEducation} />
       </div>
+      <Button label="New Education" onClick={newEducation} />
     </Accordion>
   );
 }

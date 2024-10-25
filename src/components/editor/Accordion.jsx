@@ -11,7 +11,7 @@ function Accordion({ title, children, open = false }) {
       </button>
       <div
         className={`transition-all ease-in-out overflow-hidden ${
-          isOpen ? "max-h-screen p-4" : "max-h-0"
+          isOpen ? "h-auto p-4" : "max-h-0"
         }`}
       >
         {children}

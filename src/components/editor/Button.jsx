@@ -1,7 +1,7 @@
-function Button({ label, newEducation }) {
+function Button({ label, onClick, logo = false }) {
   return (
-    <button className="btn" onClick={newEducation}>
-      {label}
+    <button className="btn" onClick={onClick}>
+      {!logo ? label : <img src={label}></img>}
     </button>
   );
 }

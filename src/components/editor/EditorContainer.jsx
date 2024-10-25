@@ -1,4 +1,5 @@
 import EducationSection from "./EducationSection";
+import ExperienceSection from "./ExperienceSection";
 import PersonalSection from "./PersonalSection";
 
 function EditorContainer({
@@ -7,6 +8,9 @@ function EditorContainer({
   educations,
   newEducation,
   setEducations,
+  experiences,
+  newExperience,
+  setExperience,
 }) {
   return (
     <div className="editor">
@@ -18,6 +22,11 @@ function EditorContainer({
         educations={educations}
         newEducation={newEducation}
         setEducations={setEducations}
+      />
+      <ExperienceSection
+        experiences={experiences}
+        newExperience={newExperience}
+        setExperience={setExperience}
       />
     </div>
   );
