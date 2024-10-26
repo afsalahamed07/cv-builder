@@ -1,5 +1,5 @@
 import Accordion from "./Accordion";
-import Button from "./button";
+import Button from "./Button";
 import Experience from "./Experience";
 
 function ExperienceSection({ experiences, newExperience, setExperience }) {

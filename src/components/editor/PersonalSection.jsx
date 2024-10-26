@@ -1,4 +1,4 @@
-import Input from "./input";
+import Input from "./Input";
 import Accordion from "./Accordion";
 
 function PersonalSection({ personalState, setPersonal }) {

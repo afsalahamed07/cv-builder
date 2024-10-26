@@ -1,6 +1,6 @@
-import Input from "./input";
+import Input from "./Input";
 import Accordion from "./Accordion";
-import Button from "./button";
+import Button from "./Button";
 import bin from "../../assets/bin.png";
 
 function Education({ id, educationState, setEducations }) {
